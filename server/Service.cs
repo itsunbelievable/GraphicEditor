@@ -10,7 +10,7 @@ namespace server
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service" in both code and config file together.
     public class Service : IService
     {
-        private string pathToXML = @"D:\workspace_state.xml";
+        private string pathToXML = Environment.SpecialFolder.MyDocuments + "workspace_state.xml";
 
         public string GetPathToXml()
         {
